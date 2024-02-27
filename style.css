@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+ul{
+    list-style-type:none; /*tip npr cime da bude sredjena lista*/
+}
+
+a{
+    text-decoration:none;
+}
