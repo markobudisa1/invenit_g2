@@ -5,6 +5,17 @@
     font-family: "Work Sans", sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+    --color-purple-dark:#54318C;
+    --color-purple-light:#A486D5;
+    --color-yellow-light:#FFEB99;
+    --color-yellow-mid:#FFDE5C;
+    --color-yellow-dark:#FFCC00;
+}
 
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
@@ -13,10 +24,91 @@
   font-style: normal;
 }
 
-ul{
-    list-style-type:none; /*tip npr cime da bude sredjena lista*/
-}
-
 a{
     text-decoration:none;
+}
+
+header{
+    background-color: var(--color-purple-light);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:99;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    padding:5px;
+    justify-content:space-around;
+}
+
+.logo img{
+    height:50px;
+}
+
+nav > ul{
+    display:flex;
+    list-style-type:none; /*tip npr cime da bude sredjena lista*/
+    justify-content:space-between;
+    text-decoration:none;
+}
+
+.menu a{
+    margin-inline:0 15px;
+    color: var(--color-yellow-light);
+}
+
+.menu a:hover{
+    color: var(--color-purple-dark);
+}
+
+nav ul li a::after{
+    content:'';
+    display:block;
+    height:4px;
+    width:0;
+    background:var(--color-yellow-dark);
+    transition:all .5s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+.landing-page{
+    height:100vh;
+    width:100vw;
+    background: rgb(16,0,43);
+}
+
+.hero-img{
+    max-width:260px;
+    height: auto;
+    padding-top: 30%;
+}
+
+.content-left{
+
+}
+
+.content-right{
+
+}
+
+main h1{
+
+}
+
+main h2{
+
+}
+
+main p{
+
+}
+
+main span{
+    
 }
