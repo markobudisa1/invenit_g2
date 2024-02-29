@@ -51,8 +51,13 @@ nav{
 nav > ul{
     display:flex;
     list-style-type:none; /*tip npr cime da bude sredjena lista*/
-    justify-content:space-between;
+    justify-content:space-evenly;
     text-decoration:none;
+}
+
+nav ul li a{
+    justify-content:space-evenly;
+    display:inline-block;
 }
 
 .menu a{
@@ -81,34 +86,113 @@ nav ul li a:hover::after{
     height:100vh;
     width:100vw;
     background: rgb(16,0,43);
+background: -moz-linear-gradient(155deg, rgba(16,0,43,1) 0%, rgba(24,0,43,0.9) 50%, rgba(16,0,43,0.6) 100%);
+background: -webkit-linear-gradient(155deg, rgba(16,0,43,1) 0%, rgba(24,0,43,0.9) 50%, rgba(16,0,43,0.6) 100%);
+background: linear-gradient(155deg, rgba(16,0,43,1) 0%, rgba(24,0,43,0.9) 50%, rgba(16,0,43,0.6) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10002b",endColorstr="#10002b",GradientType=1);
 }
 
-.hero-img{
-    max-width:260px;
-    height: auto;
-    padding-top: 30%;
+.hero-image{
+    max-width:250px;
+    height:auto;
+    padding-top:30%;
+    padding-left:25px;
+}
+
+.hero-card{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    height:65%;
+    width:80%;
+    top:15%;
+    left:10%;
+    padding-bottom:5%;
+    background-color:rgba(255,255,255,0.45);
+    box-shadow:0 0 10px 1px rgba(0,0,0,0.25);
+    backdrop-filter:blur(15 px);
+    border:solid 2px rgba(255,255,255,0.1);
+    border-radius:30px;
 }
 
 .content-left{
-
+    padding-right: 7%;
 }
 
 .content-right{
-
+    width:60%;
+    margin-right:5%;
+    padding-left:7%;
 }
 
-main h1{
-
+.landing-page h1{
+    display:flex;
+    font-size:50px;
+    color:whitesmoke;
+    justify-content:flex-start;
 }
 
-main h2{
-
+.landing-page h2{
+    display:flex;
+    font-size:50px;
+    color:whitesmoke;
+    justify-content:flex-end;
 }
 
-main p{
-
+.landing-page p{
+    display:flex;
+    font-size:20px;
+    color:whitesmoke;
+    justify-content:flex-start;
 }
 
 main span{
-    
+    display:flex;
+    justify-content: space-around;
+}
+
+.reason{
+    height:100vh;
+    width:100vw;
+    background: rgb(218, 218, 218);
+}
+
+.reason h2{
+    display:flex;
+    justify-content:center;
+    padding-top:55px;
+    color:rgb(16,0,43);
+}
+
+.jobs{
+    height:100vh;
+    width:100vw;
+    background: #FFEB99;
+}
+
+.jobs h2{
+    display:flex;
+    justify-content:center;
+    padding-top:55px;
+    color:rgb(16,0,43);
+}
+
+.experiences{
+    height:100vh;
+    width:100vw;
+    background: rgb(218, 218, 218);
+}
+
+.experiences h2{
+    display:flex;
+    justify-content:center;
+    padding-top:55px;
+    color:rgb(16,0,43);
+}
+
+.footer{
+    height:100vh;
+    width:100vw;
+    background: rgb(16,0,43);
 }
