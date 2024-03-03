@@ -264,20 +264,60 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10002b",endCo
     color:rgb(16,0,43);
 }
 
-.list-group{
+/* .list-group{
     display:flex;
     background-color:var(--color-yellow-light);
     width:70%;
     margin: 0 auto;
     padding-top:50px;
     align-items: center;
+    justify-content: center;
+}
+
+.list-group-item{
+    display:flex;
+    justify-content:space-evenly;
+    width:70%;
+    height: 100px;
+    align-items:center;
 }
 
 .list-group-item img{
     display:flex;
-    width:150px;
-    height:150px;
+    width:50px;
+    height:50px;
+    padding-left:50 px;
+    justify-content: space-around;
 }
+
+.list-group-item p{
+    display:flex;
+    justify-content: space-around;
+} */
+
+.form-select{
+    display:flex;
+    position:relative;
+    justify-content:center;
+    width: 70%;
+    padding-top:50px;
+    background-color: #FFEB99;
+    
+}
+
+.select-selected{
+    background-color: DodgerBlue;
+}
+
+.select-items {
+    position: relative;
+    display:flex;
+    background-color: var(--color-yellow-light);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
 
 .experiences{
     height:100vh;
