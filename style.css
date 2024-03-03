@@ -265,13 +265,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10002b",endCo
 }
 
 .list-group{
-    border: 5px var(--color-purple-dark);
+    display:flex;
     background-color:var(--color-yellow-light);
     width:70%;
     margin: 0 auto;
     padding-top:50px;
+    align-items: center;
 }
 
+.list-group-item img{
+    display:flex;
+    width:150px;
+    height:150px;
+}
 
 .experiences{
     height:100vh;
