@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="https://invenit.io" target="_blank"><img src="images/logo.png"></img></a>
+            <div class="logo"><a href="https://invenit.io" target="_blank"><img src="images/logo.png"></img>
             </div>
             <ul class="menu">
                 <li><a href="#landing-page">Početna</a></li>
@@ -117,23 +117,65 @@
             </div>
         </section>
         <section class="jobs" id="jobs">
-            <div class="content">
-                <h2>Zanimanja</h2>
-                <!-- <ul class="list-group">
+            <div class="herocard">
+                <div class="content" style="width:70%">
+                    <h2>Zanimanja</h2>
+                    <!-- <ul class="list-group">
                     <li class="list-group-item"><img src="images/webdeveloper.png" alt="Web developer"><p>Web developer</p></li>
                     <li class="list-group-item"><img src="images/softwaredeveloper.png" alt="Software developer"><p>Software developer</p></li>
                     <li class="list-group-item"><img src="images/uxmanager.png" alt="UX/UI manager"><p>UX/UI manager</p></li>
                     <li class="list-group-item"><img src="images/qamanager.png" alt="QA manager"><p>QA manager</p></li>
                     <li class="list-group-item"><img src="images/projectmanager.png" alt="Project manager"><p>Project manager</p></li>
                   </ul> -->
-                <select class="form-select form-select-lg mb-3" aria-label="Large select example" style="width:70%">
-                    <option selected>Zanimanja</option>
-                    <option value="1" class="webdeveloper"><a href="">Web developer</a></option>
-                    <option value="2" class="softwaredeveloper"><a href="">Software developer</a></option>
-                    <option value="3" class="uxmanager"><a href="">UX/UI manager</a></option>
-                    <option value="4" class="qamanager"><a href="">QA manager</a></option>
-                    <option value="5" class="projectmanager"><a href="">Project manager</a></option>
-                </select>
+                    <select id="job-select" onchange="selectJob()" class="form-select form-select-lg mb-3"
+                        aria-label="Large select example" style="width:70%">
+                        <option value="webdeveloper" class="webdeveloper">Web developer</option>
+                        <option value="softwaredeveloper" class="softwaredeveloper">Software developer</option>
+                        <option value="uxmanager" class="uxmanager">UX/UI manager</option>
+                        <option value="qamanager" class="qamanager">QA manager</option>
+                        <option value="projectmanager" class="projectmanager">Project manager</option>
+                    </select>
+                    <div id="webdeveloper" class="hide select-content ">
+                        <h3>Web developer</h3>
+                        <img src="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui animi totam corrupti, corporis
+                            sapiente quidem natus dolor in voluptatum placeat ipsum adipisci necessitatibus molestiae
+                            eum
+                            ipsam quae rem neque. Vel!</p>
+                    </div>
+                    <div id="softwaredeveloper" class="hide select-content ">
+                        <h3>Software developer</h3>
+                        <img src="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui animi totam corrupti, corporis
+                            sapiente quidem natus dolor in voluptatum placeat ipsum adipisci necessitatibus molestiae
+                            eum
+                            ipsam quae rem neque. Vel!</p>
+                    </div>
+                    <div id="uxmanager" class="hide select-content ">
+                        <h3>UX/UI manager</h3>
+                        <img src="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui animi totam corrupti, corporis
+                            sapiente quidem natus dolor in voluptatum placeat ipsum adipisci necessitatibus molestiae
+                            eum
+                            ipsam quae rem neque. Vel!</p>
+                    </div>
+                    <div id="qamanager" class="hide select-content ">
+                        <h3>QA manager</h3>
+                        <img src="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui animi totam corrupti, corporis
+                            sapiente quidem natus dolor in voluptatum placeat ipsum adipisci necessitatibus molestiae
+                            eum
+                            ipsam quae rem neque. Vel!</p>
+                    </div>
+                    <div id="projectmanager" class="hide select-content ">
+                        <h3>Project manager</h3>
+                        <img src="">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui animi totam corrupti, corporis
+                            sapiente quidem natus dolor in voluptatum placeat ipsum adipisci necessitatibus molestiae
+                            eum
+                            ipsam quae rem neque. Vel!</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="experiences" id="experiences">
@@ -147,5 +189,6 @@
     </main>
     <footer></footer>
 </body>
+<script src="script.js"></script>
 
 </html>
