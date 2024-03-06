@@ -135,9 +135,15 @@ nav ul li a:hover::after {
 
 .landing-page h1 {
     display: flex;
-    font-size: 50px;
+    font-size: 65px;
     color: whitesmoke;
     justify-content: flex-start;
+}
+
+.landing-page h1 span {
+    color: #FFEB99;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .landing-page h2 {
@@ -145,6 +151,12 @@ nav ul li a:hover::after {
     font-size: 50px;
     color: whitesmoke;
     justify-content: flex-end;
+}
+
+.landing-page h2 span {
+    color: #FFEB99;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 .landing-page p {
@@ -332,6 +344,18 @@ main span {
     height: fit-content;
 }
 
+.jobs content {
+    display: inline;
+}
+
+.content h3 {
+    width: 70%;
+}
+
+.content img {
+    display: flex;
+}
+
 .select-selected {
     background-color: DodgerBlue;
 }
@@ -443,18 +467,18 @@ body {
     90% {margin-left: -3000px;}
   }   */
 
-  .slider-container {
+.slider-container {
     width: 90%;
     margin: 50px auto;
     overflow: hidden;
-    }
-    
-    .slider {
+}
+
+.slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    }
-    
-    .slide {
+}
+
+.slide {
     flex: 0 0 100%;
     box-sizing: border-box;
     text-align: center;
@@ -462,116 +486,204 @@ body {
     background-color: #3498db;
     color: #fff;
     font-size: 24px;
-    border-radius:30px;
-    }
-    
-    #slide1 { background-color: #3498db; }
-    #slide2 { background-color: #2ecc71; }
-    #slide3 { background-color: #e74c3c; }
-    #slide4 { background-color: #f39c12; }
-    #slide5 { background-color: #9b59b6; }
-    #slide6 { background-color: #1abc9c; }
-    #slide7 { background-color: #e67e22; }
-    
-    button {
+    border-radius: 30px;
+}
+
+#slide1 {
+    background-color: #3498db;
+}
+
+#slide2 {
+    background-color: #2ecc71;
+}
+
+#slide3 {
+    background-color: #e74c3c;
+}
+
+#slide4 {
+    background-color: #f39c12;
+}
+
+#slide5 {
+    background-color: #9b59b6;
+}
+
+#slide6 {
+    background-color: #1abc9c;
+}
+
+#slide7 {
+    background-color: #e67e22;
+}
+
+button {
     margin-top: 10px;
     padding: 10px;
-    font-size: 16px;}
+    font-size: 16px;
+}
 
-.footer {
+footer {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    height: 50vh;
     justify-content: center;
     background: rgb(16, 0, 43);
     background-color: #24262b;
     padding: 70px 0;
+    justify-content: space-between;
 }
 
-.footer .container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-.footer ul{
-	list-style: none;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
+
+
+
+footer ul {
+    list-style: none;
 }
 
-.footer-col img{
-  height: 70px;
-  width: auto;
-}
-.footer-col p{
-  color: #bbbbbb;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: var(--color--purple-light);
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
-}
-
-.iframe {
+footer-col {
     display: flex;
-    position: relative;
-    width: 60px;
-    height: 50px;
-    justify-content: flex-end;
-    align-items: center;
-    padding-top: 5px;
-    padding-right: 5px;
+    width: 100%;
+    padding: 0 15px;
+    flex-direction: column;
 }
 
-.main{
-    width:100vw;
+.footer-col img {
+    height: 70px;
+    width: auto;
+}
+
+.footer-col p {
+    color: #bbbbbb;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--color--purple-light);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*responsive*/
+
+@media(max-width: 767px) {
+    header {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .hamburger #closeHam {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background-color: rgba(199, 125, 255, 0.95);
+        width: 100%;
+        height: 35vh;
+        padding-top: 60px;
+        gap: 5vh;
+    }
+
+    .landing-page {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-card {
+        background: none;
+        border: none;
+        box-shadow: none;
+
+    }
+
+    .landing-page h1 {
+        font-size: 1.3rem;
+    }
+
+    .landing-page h2 {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .landing-page p {
+        font-size: 0.8rem;
+    }
+
+    .landing-page img {
+        height: 300px;
+        width: auto;
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
 }
