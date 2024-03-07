@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>IT vodič</title>
     <link reL="icon" href=".images/rubber-duck_icon-icons.com_55299.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -25,7 +26,7 @@
         </nav>
     </header>
     <main>
-        <section class="landing-page">
+        <section class="landing-page" id="landing-page">
             <div class="hero-card">
                 <div class="content-left">
                     <img src="images/koda.png" alt="Patka Koda" class="hero-image"></img>
@@ -50,7 +51,8 @@
                             </div>
 
                             <div class="back-side">
-                                <p>Postoji velika potražnja za zanimanjima u IT oblasti, te i tržište nudi brojna radna
+                                <p>Postoji velika potražnja za zanimanjima u IT oblasti, a tržište takođe nudi brojna
+                                    radna
                                     mjesta i raznovrsne pozicije unutar preduzeća.</p>
                             </div>
                         </div>
@@ -112,7 +114,7 @@
                             </div>
 
                             <div class="back-side">
-                                <p>Timski rad, kao jena od najpoznatijih odlika IT zanimanja, neizostavan je dio
+                                <p>Timski rad, kao jedna od najpoznatijih odlika IT zanimanja, neizostavan je dio
                                     svakodnevice u IT preduzećima.</p>
                             </div>
                         </div>
@@ -175,53 +177,88 @@
                 <h2>Iskustva</h2>
                 <div class="slider-container">
                     <div class="slider">
-                        <div class="slide" id="slide1">1</div>
-                        <div class="slide" id="slide2">2</div>
-                        <div class="slide" id="slide3">3</div>
-                        <div class="slide" id="slide4">4</div>
-                        <div class="slide" id="slide5">5</div>
-                        <div class="slide" id="slide6">6</div>
-                        <div class="slide" id="slide7">7</div>
+                        <div class="slide" id="slide1">
+                            <img src="images/aleksa.png">
+                            <div class="experience-col">
+                                <p>Dobra ekipa i još bolje druženje.</p>
+                                <h3>- Aleksa</h3>
+                            </div>
+                        </div>
+                        <div class="slide" id="slide2">
+                            <img src="images/andrej.png">
+                            <div class="experience-col">
+                                <p>Spoznao sam nemjerljivu vrijednost timskog rada.
+                                </p>
+                                <h3>- Andrej</h3>
+                            </div>
+                        </div>
+                        <div class="slide" id="slide3">
+                            <img src="images/kristijan.png">
+                            <div class="experience-col">
+                                <p>Bilo je zanimljivo zapravo primijeniti teoriju u praksi.</p>
+                                <h3>- Kristijan</h3>
+                            </div>
+                        </div>
+                        <div class="slide" id="slide4">
+                            <img src="images/lana.png">
+                            <div class="experience-col">
+                                <p>Sve pohvale za naš tim!</p>
+                                <h3>- Lana</h3>
+                            </div>
+                        </div>
+                        <div class="slide" id="slide5">
+                            <img src="images/marko.png">
+                            <div class="experience-col">
+                                <p>Izuzetan spoj praktičnog rada, ugodne atmosfere i druženja.</p>
+                                <h3>- Marko</h3>
+                            </div>
+                        </div>
+                        <div class="slide" id="slide6">
+                            <img src="images/maja.png">
+                            <div class="experience-col">
+                                <p>Premašili ste sva moja očekivanja - bila je čast i zadovoljstvo sarađivati sa vama!
+                                </p>
+                                <h3>- Maja</h3>
+                            </div>
+                        </div>
+                        <!-- <div class="slide" id="slide7">
+                            <img src="images/mirko.png">
+                            <div class="experience-col">
+                                <p>a</p>
+                                <h3>- Mirko</h3>
+                            </div>
+                        </div> -->
                     </div>
-                    <button id="prevBtn">Prethodni</button>
-                    <button id="nextBtn">Sledeći</button>
                 </div>
-            </div>
             </div>
         </section>
     </main>
     <footer>
-                    <div class="footer-col">
-                        <img src="./images/logo2.png" alt="">
-                    </div>
-                    <div class="footer-col">
-                        <h4>company</h4>
-                        <ul>
-                            <li><a href="#">about us</a></li>
-                            <li><a href="#">our services</a></li>
-                            <li><a href="#">privacy policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>get help</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Suport</a></li>
-                            <li><a href="#">Join us</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer-col">
-                    </div>
+        <div class="footer-col">
+            <img src="./images/logo2.png" alt="">
+        </div>
+        <div class="footer-col">
+            <h4>Kompanija</h4>
+            <ul>
+                <li><a href="https://invenit.io/about/">O nama</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Pomoć</h4>
+            <ul>
+                <li><a href="https://invenit.io/blog/">Blog</a></li>
+                <li><a href="https://invenit.io/join/">Pridružite nam se</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Pratite nas</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com/invenitsolutions"> <i class="fa fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/invenit.io?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+        </div>
     </footer>
 </body>
 <script src="script.js"></script>
